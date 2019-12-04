@@ -1,0 +1,64 @@
+.textInput {
+	width: 100%;
+	outline: none;
+	~ .textfieldBar {
+		position: relative;
+		border-bottom: 0.0625rem solid #999;
+		display: block;
+		&:before {
+			content: '';
+			height: 0.125rem;
+			width: 0;
+			left: 50%;
+			bottom: -0.0625rem;
+			position: absolute;
+			background: #337ab7;
+			transition: left 0.28s ease, width 0.28s ease;
+			z-index: 2;
+		}
+	}
+	&:focus {
+		~ .textfieldBar {
+			&:before {
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
+}
+
+.fileInput {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+  	z-index: 1;
+}
+
+.dropZone {
+	position: relative;
+	height: 200px;
+	background-color: red;
+	background-color: #80808036;
+  	border-radius: 5px;
+  	.imagePreview {
+  		position: absolute;
+  		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+  	}
+  	.helpText {
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  	}
+}
+
