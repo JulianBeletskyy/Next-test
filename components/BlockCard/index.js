@@ -1,6 +1,6 @@
 import React from 'react'
 import { DEFAULT_IMAGE } from '../../config'
-import blockStyles from './blockCard.scss'
+import blockStyles from './Card.scss'
 
 const getItemStyle = (isDragging, draggableStyle) => ({
 	...draggableStyle,
