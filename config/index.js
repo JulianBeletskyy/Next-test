@@ -1,2 +1,2 @@
-export const API_URL = 'https://localhost:5000/api/v1'
-export const DEFAULT_IMAGE = 'http://via.placeholder.com/200x200'
+export const API_URL = 'https://next-test-drag.herokuapp.com/api/v1'
+export const DEFAULT_IMAGE = 'https://via.placeholder.com/200x200'
