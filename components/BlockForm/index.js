@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import formStyles from './blockForm.scss'
+import formStyles from './Form.scss'
 import cn from 'classnames'
 import { DragDropContext, Droppable, resetServerContext } from 'react-beautiful-dnd'
 import DroppableList from '../DroppableList'
